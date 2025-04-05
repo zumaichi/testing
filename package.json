@@ -1,0 +1,32 @@
+{
+  "name": "ts-sandbox",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0",
+    "vite-plugin-checker": "^0.5.6",
+    "vitest": "^0.29.8"
+  },
+  "description": "Para la parte de cada módulo en la que te planteamos ejercicios con JavaScript puedes usar este sandbox.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zumaichi/ts-condicionales.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zumaichi/ts-condicionales/issues"
+  },
+  "homepage": "https://github.com/zumaichi/ts-condicionales#readme"
+}
