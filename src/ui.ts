@@ -114,23 +114,12 @@ export const desactivarSguir = () => {
     botonSguirContenedor.disabled = true;
 };
 
-export const pintarMensaje = (puntuacion: number) => {
+export const pintarMensaje = () => {
   const mensajeFinal = document.getElementById("mensaje");
-  
   if (mensajeFinal !== null) {
-    if (puntuacion >= 0.5 && puntuacion <= 4) {
-      mensajeFinal.innerHTML = "Has sido muy conservador.";
-    } else if (puntuacion >= 5 && puntuacion < 6) {
-      mensajeFinal.innerHTML = "Te ha entrado el canguelo eh?";
-    } else if (puntuacion >= 6 && puntuacion < 7.5) {
-      mensajeFinal.innerHTML = "Casi casi...";
-    } else if (puntuacion === 7.5) {
-      mensajeFinal.innerHTML = "¡Lo has clavado! ¡Enhorabuena!";
-    } else if (puntuacion > 7.5) {
-      mensajeFinal.innerText = "Game Over";
-    } else {
-      mensajeFinal.innerHTML = "¡pulsa dame cata para empezar!";
-    }
+    mensajeFinal.innerHTML = "¡pulsa dame cata para empezar!";
+  } else {
+    console.error("No se ha encontrado el elemento de mensaje");
   }
 };
 
